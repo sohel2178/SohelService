@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baudiabatash.sohelservice.MainActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/textView"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:id="@+id/startService"
+        android:text="start service"
+        android:onClick="startService"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startService"
+        android:id="@+id/stopService"
+        android:text="stop service"
+        android:onClick="stopService"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stopService"
+        android:id="@+id/bindService"
+        android:text="Bind service"
+        android:onClick="bindService"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bindService"
+        android:id="@+id/unBindService"
+        android:text="Unbind service"
+        android:onClick="unBindService"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unBindService"
+        android:id="@+id/getRandomNumber"
+        android:text="get random number"
+        android:onClick="getRandomNumber"/>
+
+</RelativeLayout>
